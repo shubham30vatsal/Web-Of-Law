@@ -4,14 +4,14 @@
 
 ## This repositiory aims to experiment with new BERT-based techniques for the classification of long (over 512 tokens) US Supreme Court documents. The details have been listed below:
 
-1. stable_diffusion_cifar.ipynb notebook contains the code to fine-tune CIFAR-10 on stable diffusion. Please download CIFAR-10 dataset and create the format of dataset as instructed in the notebook.
-2. stable_diffusion_flower.ipynb notebook contains the code to fine-tune CIFAR-10 on stable diffusion. Please download Oxford-10 (Flower) dataset and create the format of dataset as instructed in the notebook.
-3. train_text_to_image.py contains the hugging face wrapper for fine-tuning stable diffusion.
-4. fid_cifar10.ipynb calculates the FID between generated test set and ground truth test set of CIFAR-10.
-5. fid_flower.ipynb calculates the FID between generated test set and ground truth test set of Oxford-102 (Flower).
-6. gan_test_cifar.ipynb evaluates the classification performance of one of the state of the art models on the generated CIFAR-10 dataset.
-7. resize.py contains the code for resizing images
-8. split_* contain code for splitting images into classes for the use of imageFolder. 
+1. BEST-512 folder contains all the experiments done with different BERT-based models and aims at identifying the best 512 token chunk with respect to the two classification tasks. Please read the paper for more details.
+2. Concat folder showcases how pooling of CLS tokens from parallel BERT-based models works out with respect to the two classification tasks. Please read the paper for more details.
+3. Ensemble folder experiments how maximum voting strategy from parallel BERT-based models works out with respect to the two classification tasks. Please read the paper for more details.
+4. LSM folder experiments with models like Longformer which can accept input sequences longer than 512 tokens and compares results with other techniques for the two classification tasks. Please read the paper for more details.
+5. Stride folder shows how a stride window (contextual overlap between two parallel BERT-based models) can affect the results for the two classification tasks. Please read the paper for more details.
+6. Summarization folder contains all the experiments done with different BERT-based models and aims at summarizing the documents over 512 tokens to <= 512 tokens for the two classification tasks. Please read the paper for more details.
+7. label_sc.txt contains the labels for all the data points for the 15-label classification task.
+8. label_sc_279.txt contains the labels for all the data points for the 279-label classification task.
 
 
 
