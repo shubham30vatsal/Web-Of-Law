@@ -1,4 +1,4 @@
-# Text-To-Image Generation Using Stable Diffusion
+# Classification of US Supreme Court Cases using BERT-based Techniques
 
 
 
